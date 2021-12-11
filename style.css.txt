@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+* {
+  /* background-color: #3E065F; */
+  background-color: #171717;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  font-size: 450%;
+  margin: 40px 0 0.5px 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg,#8d00df, #1607eb);
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.slogan {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 160%;
+  color: #e0e0e0;
+}
+
+.social-media {
+  margin-top: -1em;
+  letter-spacing: 0.3em;
+  text-align: center;
+  color: #e0e0e0;
+}
+
+.social-media > a {
+  color: #e0e0e0;
+}
+
+.social-media > a:hover {
+  color: white;
+  font-size: 105%;
+}
+
+
+
+/* Main */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  font-size: 170%;
+  color: white;
+  font-family: 'Mukta', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.element {
+  margin: 5px 20% 5px 20%;
+  padding: 1em;
+  border-radius: 2em;
+  color: #adadad;
+  line-height: 25px;
+  font-size: 110%;
+  display: flex;
+  flex-direction: row;
+}
+
+.element2 {
+  margin-left: 21%;
+  margin-right: 20%;
+}
+
+@media (max-width: 800px) {
+  .element {
+    flex-direction: column;
+  }
+}
+
+
+/* Footer */
+footer > p {
+  margin: 8px 20% 6px 20%;
+  color: #adadad;
+}

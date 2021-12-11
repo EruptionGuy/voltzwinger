@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Voltzwinger</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/f9eb1bec5c.js" crossorigin="anonymous"></script>
+
+    <!-- Embed -->
+    <meta name="description" content="Voltzwinger - Master of being mediocre at everything." />
+    <meta name="og:image" content="images/voltz.jpeg" />
+    <meta name="author" content="Voltzwinger" /> 
+    <meta name="theme-color" content="#b100fc" />
+    <meta name="keywords" content="voltzwinger, roblox, mediocre, FE2, JTOH, twitter, discord" />
+  </head>
+  <body>
+    <header>
+      <h1>Voltzwinger</h1>
+      <p class="slogan">Master of being mediocre at everything.</p>
+      <p class="social-media">
+        <a href="https://twitter.com/Voltzwinger"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="https://www.youtube.com/channel/UCRVu_6MrkeGrR_S2pbrQv3Q"><i class="fa fa-youtube fa-2x"></i></a>
+        <a href="https://discord.com/invite/X7ZRnza"><i class="fab fa-discord fa-2x"></i></a>
+      </p>
+    </header>
+    <main>
+      <div class="element">
+        <div>
+          <h2>About Voltz</h2>
+          <p>"I'm some dude on the internet who's mediocre at everything. I mostly play Roblox, but you'll see some other stuff here too! Make sure to check out my other channels and my friend's channels! I'm an artist, lobbyist, gamer, animator, game developer..."</p>
+        </div>
+        <div>
+         <img src="images/voltz.jpeg" width="150px" alt="Volz Icon">
+        </div>
+      </div>
+      <h2 class="element2">Join the Community</h2>
+      <div class="element">
+        <div style="flex-grow: 0.25">
+          <a class="twitter-timeline" data-width="250" data-height="500" data-dnt="true" data-theme="dark" href="https://twitter.com/voltzwinger?ref_src=twsrc%5Etfw">Tweets by voltzwinger</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div style="flex-grow: 0.25">
+          <iframe src="https://discord.com/widget?id=738567762724519986&theme=dark" width="250" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Made with <i class="fas fa-coffee"></i> by Eruption</p>
+    </footer>
+  </body>
+</html>
