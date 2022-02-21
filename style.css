@@ -3,46 +3,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
 
 * {
-  /* background-color: #3E065F; */
-  background-color: #171717;
+  box-sizing: border-box;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
 }
 
+html {
+    background-image: linear-gradient(#260080, #0a0074);
+}
+
 /* Header */
+.header {
+  border: 5px solid #0a0a0a;
+  background-color: #121212;
+  border-radius: 0.5em;
+  margin: 1em 25%;
+  padding: 1em;
+}
+
+.header p {
+  text-align: center;
+  color: rgb(182, 182, 182);
+  font-size: 140%;
+}
+
 h1 {
   text-align: center;
   font-size: 450%;
-  margin: 40px 0 0.5px 0;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   background-image: linear-gradient(90deg,#8d00df, #1607eb);
   font-family: 'Fuzzy Bubbles', cursive;
+  animation-name: h1Anim;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
 }
 
-.slogan {
-  text-align: center;
-  margin-bottom: 1em;
-  font-size: 160%;
-  color: #e0e0e0;
+@keyframes h1Anim {
+  25% {background-image: linear-gradient(90deg,#df4a00, #ff2929);}
+  50% {background-image: linear-gradient(90deg,#1925ff, #19beff);}
 }
 
 .social-media {
-  margin-top: -1em;
-  letter-spacing: 0.3em;
+  padding-top: 0.5em;
+  letter-spacing: 0.25em;
   text-align: center;
+  font-size: 250%;
+}
+
+.social-media a {
   color: #e0e0e0;
 }
 
-.social-media > a {
-  color: #e0e0e0;
-}
-
-.social-media > a:hover {
+.social-media a:hover {
   color: white;
-  font-size: 105%;
+  font-size: 102%;
 }
 
 
@@ -52,6 +69,11 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 0.5em;
+}
+
+img:hover {
+  box-shadow: 1px 5px 5px #000000;
 }
 
 h2 {
@@ -62,31 +84,161 @@ h2 {
   margin-bottom: 10px;
 }
 
-.element {
-  margin: 5px 20% 5px 20%;
+h3 {
+  text-align: center;
+  font-size: 150%;
+  padding-top: 2.5%;
+  color: white;
+}
+
+button {
+  border: 2px solid #000000;
+  border-radius: 0.25em;
+  font-size: 130%;
+  color: white;
+  margin: 0.5% 45%;
+  width: 14%;
+  padding: 0.5em;
+  animation-name: buttonAnim;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes buttonAnim {
+  0% {background-image: linear-gradient(90deg,#8f3000, #8f0000);}
+  100% {background-image: linear-gradient(90deg,#000899, #00648b);}
+}
+
+#box1, #box2, #box3, #box4, #box5 {
+  border: 5px solid #0a0a0a;
+  background-color: #121212 !important;
+  box-shadow: 1px 5px 5px #000000;
+  border-radius: 0.5em;
   padding: 1em;
-  border-radius: 2em;
   color: #adadad;
   line-height: 25px;
   font-size: 110%;
+}
+
+#box1 {
+  margin-left: 10%;
+  margin-right: 1em;
+  width: 60%;
   display: flex;
-  flex-direction: row;
 }
 
-.element2 {
-  margin-left: 21%;
-  margin-right: 20%;
+#box2 {
+  margin-right: 10%;
+  width: 40%;
 }
 
-@media (max-width: 800px) {
-  .element {
-    flex-direction: column;
+#box3 {
+  margin: 1em 1em 1em 15%;
+  width: 75%;
+}
+
+#box4 {
+  margin: 1em 15% 1em 0;
+  width: 25%;
+  text-align: center;
+}
+
+#box5 {
+  margin: 0 16% 1em 16%;
+}
+
+@media only screen and (max-width: 1200px) {
+  #box1 {
+    margin-left: 5%;
+    margin-right: 1%;
+    width: 70%;
+  }
+
+  #box2 {
+    margin-right: 5%;
+    width: 30%;
+  }
+
+  #box3 {
+    margin-left: 10%;
+  }
+
+  #box4 {
+    margin-right: 10%;
+  }
+
+  #box5 {
+    font-size: 90%;
+    margin-left: 11%;
+    margin-right: 11%;
+  }
+
+  button {
+    margin-left: 35%;
+    margin-right: 35%;
   }
 }
 
+@media only screen and (max-width: 930px) {
+  .header {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
 
-/* Footer */
-footer > p {
-  margin: 8px 20% 6px 20%;
-  color: #adadad;
+  #box1 {
+    margin-left: 1%;
+    margin-right: 0.5%;
+    width: 70%;
+  }
+
+  #box2 {
+    margin-right: 1%;
+    width: 30%;
+  }
+
+  #box3 {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  #box4 {
+    margin-right: 1%;
+  }
+
+  #box5 {
+    font-size: 90%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  button {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .header {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #box1, #box2, #box3, #box4, #box5 {
+    width: 97.5%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  #box2 {
+    margin-top: 1em;
+  }
+
+  button {
+    margin-left: 45%;
+    margin-right: 45%;
+  }
+
+  main > div {
+    flex-direction: column;
+  }
 }
