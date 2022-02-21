@@ -241,4 +241,40 @@ button {
   main > div {
     flex-direction: column;
   }
+
+  iframe {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header {
+    margin-left: 6%;
+    margin-right: 6%;
+    width: 100%;
+  }
+
+  #box1, #box2, #box3, #box4, #box5 {
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #box2 {
+    margin-top: 1em;
+  }
+
+  button {
+    margin: 0;
+  }
+
+  main div {
+    flex-direction: column;
+  }
+
+  img {
+    border-radius: 0.5em !important;
+    width: 100% !important;
+    padding-bottom: 1em;
+  }
 }
